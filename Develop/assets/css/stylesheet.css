@@ -1,0 +1,76 @@
+body {
+    background-color: #d9dcd6;
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: #2a607c;
+    /* color doesnot quite match, maybe need ot explore other properties? */
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.seo {
+    color: #d9dcd6;
+}
+
+/* need to adjust the font size in the footer, distance from the bottom of the page and distance between elements
+1. create an id for the text in the footer beacuse the only text of diff color from the rest  
+*/
+
+/* 
+DOUBLE CHECK THE ORDER CONVENTION
+
+
+header
+
+h1
+
+h2
+
+h3
+
+p
+
+img
+
+footer 
+
+.seo
+
+#top-menu
+
+.hero (not sure what this refers to)
+
+.content
+
+.search-engine-optimization
+
+.float-left
+
+#online-reputation-management
+
+.online-reputation-management
+
+.float-right
+
+#social-media-marketing
+
+.social-media-marketing
+
+.float-left
+
+.benefits
+
+.benefit-lead
+
+.benefit-brand
+
+.benefit-cost
+ */
