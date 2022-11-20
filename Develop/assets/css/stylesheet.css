@@ -1,70 +1,107 @@
+* { margin: 0;
+}
+
 body {
     background-color: #d9dcd6;
     color: white;
-    font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header {
+.container {
+    display: flex;
+    justify-content: space-between;
     background-color: #2a607c;
-    /* color doesnot quite match, maybe need ot explore other properties? */
+    align-items: center;
+    padding: 10px 0px 15px 15px;
+}
+
+.seo {
+    color: #adb0ad; 
+    /* made hex value darker to be visible on page */
+}
+
+#top-menu li {
+    display: inline;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+#top-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+.main-image {
+    height: auto;
+    max-width: 100%;
+}
+
+.services {
+    background-color: #0072bb;
+    margin: 15px 10px 40px 10px;
+    padding: 45px;
+    height: 200px;
+}
+
+/* need to clean up margins to have the same distance on all sides of all text boxes*/
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left, .float-right {
+    height: 200px;
+    width: 275px;
+    padding: 0 30px 30px 0;
+}
+
+.services h2 {
+    font-size: xx-large;
+    margin: 20px 20px 20px 0px;
+}
+
+.services p {
+    margin-right: 100px;
+}
+
+.services #online-rep-p {
+    margin-right: 500px;
+}
+
+.right-side {
+    height: 100px;
+    width: 100px;
+}
+
+.benefits {
+    background-color: #2589bd;
+    text-align: center;
+    margin: 15px 10px 0px 10px;
 }
 
 footer {
     font-size: 15px;
     text-align: center;
-    line-height: 10px;
+    line-height: 30px;
+    color: black;
 }
 
-.seo {
-    color: #d9dcd6;
-}
+/* re-check all text colors, may not be white but closer to background */
 
-/* need to adjust the font size in the footer, distance from the bottom of the page and distance between elements
-1. create an id for the text in the footer beacuse the only text of diff color from the rest  
-*/
+/* When hyperlinks are clicked on top they stopped jumping to sections - check that!*/
 
 /* 
-DOUBLE CHECK THE ORDER CONVENTION
-
-
-header
-
-h1
-
-h2
+DOUBLE CHECK THE ORDER CONVENTION FOR ALL SELECTORS (Required)
 
 h3
-
-p
-
-img
-
-footer 
-
-.seo
-
-#top-menu
-
-.hero (not sure what this refers to)
-
-.content
-
-.search-engine-optimization
-
-.float-left
-
-#online-reputation-management
-
-.online-reputation-management
-
-.float-right
-
-#social-media-marketing
-
-.social-media-marketing
-
-.float-left
 
 .benefits
 
@@ -73,4 +110,5 @@ footer
 .benefit-brand
 
 .benefit-cost
- */
+
+*/
