@@ -9,17 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Linked html to css file for styling.  -->
     <link rel="stylesheet" type="text/css" href="./assets/css/stylesheet.css">
-    <!-- Added agency name and "marketing" in the title to satisfy the descriptive and concise requirement. --> 
+    <!-- Added agency name and "marketing" in title for description --> 
     <title>Horiseon Marketing</title>
 </head>
 
 <body>
-    <!-- Replaced div tag with header tag according to semantic tag use requirement. added container to use dispay: flex property to position h1 and section containing the ul side by side. -->
+    <!-- Replaced div with header, added container class to position h1 and nav links side by side-->
     <header class="container">
         <h1>Hori<span class="seo">seo</span>n</h1>
-    <!-- Replaced div tag with section tag according to semantic tag use requirement. -->  
-        <!-- Added top-menu id to postion elements in section an style -->
-        <section>
+    <!-- Replaced div w/ nav to optimize for screenreaders -->
+        <nav>
             <ul id="top-menu">
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -31,74 +30,69 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </section>
+        </nav>
     </header>
-    <!-- Replaced div tag with section tag according to semantic tag use requirement. -->  
-    <section class="hero">
-        <!-- Linked missing image, gave alt attribute, gave class "main image" for styiling in css -->
-        <img src="./assets/images/digital-marketing-meeting.jpg" class="main-image"/> 
+<!-- Main image -->
+    <section>
+        <img src="./assets/images/digital-marketing-meeting.jpg" id="marketing-meeting-img" alt="Marketing Meeting Photo" /> 
     </section>
-    <!-- Replaced div tag with section tag according to semantic tag use requirement. -->  
-    <!-- Added main tag to contain main (informative) sections of website, used it for postioning in css -->
+<!-- Main section -->
     <main>
-        <section class="content">
-            <!-- Replaced div tags with article tags according to semantic tag use requirement. Chose article tag because the content is self-contained and distributable independently from the rest of the website. -->  
+        <section>
             <article class="services">
-            <!-- Added alt description to the image. -->
+            <!-- Added alt descriptions to imgs -->
+            <!-- Added ids to h2s to jump to sections using a tag links -->
                 <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="Search Engine Optimization"/>
-                <h2>Search Engine Optimization</h2>
+                <h2 id="search-engine-optimization">Search Engine Optimization</h2>
                 <p>
                     The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
                 </p>
             </article>
-            <!-- Assigned class to article tags for easier styling in css. -->
             <article class="services">
-                <!-- Added alt description to the image. -->
                 <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="Online Reputation Management"/>
-                <h2>Online Reputation Management</h2>
+                <h2 id="online-reputation-management">Online Reputation Management</h2>
                 <p id="online-rep-p">
                     The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
                 </p>
             </article>
             <article class="services">
-                <!-- Added alt description to the image. -->
                 <img src="./assets/images/social-media-marketing.jpg" class="float-left" alt="Social Media Marketing"/>
-                <h2>Social Media Marketing</h2>
+                <h2 id="social-media-marketing">Social Media Marketing</h2>
                 <p>
                     Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
                 </p>
             </article>
         </section>
-        <!-- Replaced div tag with section tag according to semantic tag use requirement. -->  
-        <section class="benefits">
-            <!-- Replaced div tags with article tags according to semantic tag use requirement. Chose article tag because the content is self-contained and distributable independently from the rest of the website. -->  
-            <article class="benefit-lead">
+        <!-- Sidebar menu -->
+        <aside>
+            <article>
                 <h3>Lead Generation</h3>
-                <!-- Added alt description to the images and class attr for styling in css -->
-                <img src="./assets/images/lead-generation.png" alt="Lead Generation" class="right-side"/>
-                <p>
-                    Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-                </p>
+                    <img src="./assets/images/lead-generation.png" alt="Lead Generation"/>
+                    <p>
+                        Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+                    </p>
             </article>
-            <article class="benefit-brand">
+            <article>
                 <h3>Brand Awareness</h3>
-                <img src="./assets/images/brand-awareness.png" alt="Brand Awareness" class="right-side">
-                <p>
-                    Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-                </p>
+                    <img src="./assets/images/brand-awareness.png" alt="Brand Awareness">
+                    <p>
+                        Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+                    </p>
             </article>
-            <article class="benefit-cost">
+            <article>
                 <h3>Cost Management</h3>
-                <img src="./assets/images/cost-management.png" alt="Cost Management" class="right-side"/>
-                <p>
-                    As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-                </p>
+                    <img src="./assets/images/cost-management.png" alt="Cost Management"/>
+                    <p>
+                        As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+                    </p>
             </article>
-        </section>
+        <aside>
     </main>
-    <!-- Replaced div tag with footer tag according to semantic tag use requirement. -->
+
+<!-- Footer -->
     <footer>
-        <h2>Made with ❤️️ by Horiseon</h2>
+        <!-- replaced h2 by h4 to streamline headings for css -->
+        <h4>Made with ❤️️ by Horiseon</h4>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>

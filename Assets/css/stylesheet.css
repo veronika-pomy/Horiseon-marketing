@@ -2,7 +2,7 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: #d9dcd6; 
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -13,6 +13,7 @@ body {
     background-color: #2a607c;
     align-items: center;
     padding: 10px 0px 15px 15px;
+    /* check that I need all of these */
 }
 
 .seo {
@@ -20,6 +21,7 @@ body {
     /* made hex value darker to be visible on page */
 }
 
+/* position navigation links inline */
 #top-menu li {
     display: inline;
     padding-left: 55px;
@@ -35,80 +37,116 @@ main {
     display: flex;
 }
 
-.main-image {
+#marketing-meeting-img {
     height: auto;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .services {
     background-color: #0072bb;
-    margin: 15px 10px 40px 10px;
+    margin: 20px 20px 0px 20px;
     padding: 45px;
-    height: 200px;
+    height: 250px;
 }
 
-/* need to clean up margins to have the same distance on all sides of all text boxes*/
+
+.services img {
+    margin-top: 25px;
+    height: 200px;
+    width: 275px;
+}
 
 .float-left {
     float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.float-left, .float-right {
-    height: 200px;
-    width: 275px;
     padding: 0 30px 30px 0;
 }
 
-.services h2 {
-    font-size: xx-large;
-    margin: 20px 20px 20px 0px;
+.float-right  {
+    float: right;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 .services p {
-    margin-right: 100px;
+    margin-right: 50px;
+    line-height: 1.5em;
 }
 
 .services #online-rep-p {
-    margin-right: 500px;
+    margin-right: 350px;
 }
 
-.right-side {
-    height: 100px;
-    width: 100px;
-}
 
-.benefits {
+/* styling sidebar menu */
+aside {
+    width: 25%;
+    padding-left: 40px;
+    padding-right: 40px;
+    float: right;
     background-color: #2589bd;
     text-align: center;
-    margin: 15px 10px 0px 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: -50px;
+} 
+
+/* styling img for sidebar menu */
+aside img {
+    height: 150px;
+    width: 150px;
+    margin: 25px auto;
 }
 
+/* styling footer to be visible on page and readable */
 footer {
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     line-height: 30px;
-    color: black;
+    color: black;   
+    margin-bottom: 15px;
+    margin-top: 55px;
 }
 
-/* re-check all text colors, may not be white but closer to background */
+aside p {
+    text-align: left;
+    line-height: 1.5em;
+}
 
-/* When hyperlinks are clicked on top they stopped jumping to sections - check that!*/
+h3 {
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: x-large;
+}
+
+/* changes the way navbar menu is displayed on devices with width < 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        display: block;
+    }
+    #top-menu li {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        padding: 20px;
+    }
+  }
+
+  /* @media screen and (max-width: 1020px) {
+    
+  } */
 
 /* 
+
+re-check all text colors, may not be white but closer to background 
+
 DOUBLE CHECK THE ORDER CONVENTION FOR ALL SELECTORS (Required)
+Check h tags in html
+Comment each rule
 
-h3
-
-.benefits
-
-.benefit-lead
-
-.benefit-brand
-
-.benefit-cost
-
-*/
+ */
