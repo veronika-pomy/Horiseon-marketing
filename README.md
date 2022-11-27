@@ -49,5 +49,4 @@ Following is the description of teh score of work performed to satisfy the deliv
 
 ---
 
-Final deployed project could be found here for review: 
-[ ]
+[Deployed project could be found here.](https://veronika-pomy.github.io/Horiseon-marketing/)
