@@ -1,89 +1,105 @@
-* { margin: 0;
+* { 
+    margin: 0;
 }
 
 body {
     background-color: #d9dcd6; 
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
 }
 
+/* Main header and nav bar */
 .container {
     display: flex;
     justify-content: space-between;
     background-color: #2a607c;
     align-items: center;
     padding: 10px 0px 15px 15px;
-    /* check that I need all of these */
 }
 
-.seo {
-    color: #adb0ad; 
-    /* made hex value darker to be visible on page */
+/* "seo" in the h1 header, adjusted for contrast when emulating vision deficiencies in dev tools */
+#seo {
+    color: #7d807d; 
 }
 
-/* position navigation links inline */
+/* Position nav links inline */
 #top-menu li {
     display: inline;
     padding-left: 55px;
     padding-right: 55px;
 }
 
+/* Styling nav links */ 
 #top-menu li a {
     color: white;
     text-decoration: none;
 }
 
+/* Styling main cover img */
+#marketing-meeting-img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Main section of webpage */
 main {
     display: flex;
 }
 
-#marketing-meeting-img {
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
+/* Positioning for main section */
+#main-section {
+    flex: 3;
 }
 
+/* Styling main articles */
 .services {
     background-color: #0072bb;
     margin: 20px 20px 0px 20px;
     padding: 45px;
     height: 250px;
 }
-
-
+/*
+Styling images in main section */
 .services img {
     margin-top: 25px;
     height: 200px;
     width: 275px;
 }
 
+/* Positioning images in main section */
 .float-left {
     float: left;
     padding: 0 30px 30px 0;
 }
 
+/* Positioning images in main section */
 .float-right  {
     float: right;
 }
 
+/* h2 styling */
 h2 {
     margin-top: 25px;
     margin-bottom: 40px;
 }
 
+/* Styling text in the main section */
 .services p {
     margin-right: 50px;
     line-height: 1.5em;
 }
 
+/* Positioning "online reputaiton" p to the right of img */
 .services #online-rep-p {
     margin-right: 350px;
 }
 
 
-/* styling sidebar menu */
+/* Styling sidebar menu */
 aside {
-    width: 25%;
+    flex: 0.5;
     padding-left: 40px;
     padding-right: 40px;
     float: right;
@@ -94,14 +110,24 @@ aside {
     margin-bottom: -50px;
 } 
 
-/* styling img for sidebar menu */
+/* Styling imgs for sidebar menu */
 aside img {
     height: 150px;
     width: 150px;
     margin: 25px auto;
 }
 
-/* styling footer to be visible on page and readable */
+/* h3 styling */
+h3 {
+    margin-top: 30px;
+}
+
+aside p {
+    text-align: left;
+    line-height: 1.5em;
+}
+
+/* Styling footer to be visible on page and readable */
 footer {
     font-size: 12px;
     text-align: center;
@@ -111,20 +137,12 @@ footer {
     margin-top: 55px;
 }
 
-aside p {
-    text-align: left;
-    line-height: 1.5em;
-}
-
-h3 {
-    margin-top: 30px;
-}
-
+/* h4 styling */
 h4 {
     font-size: x-large;
 }
 
-/* changes the way navbar menu is displayed on devices with width < 1200px */
+/* Changes the way navbar menu is displayed on devices with width < 1200px */
 @media screen and (max-width: 1200px) {
     .container {
         display: block;
@@ -135,18 +153,66 @@ h4 {
         font-weight: bold;
         padding: 20px;
     }
+
+    .services {
+        height: 300px;
+        font-size: smaller;
+    } 
   }
 
-  /* @media screen and (max-width: 1020px) {
-    
-  } */
+  /* Changes the way sidebar menu is displayed on devices with width < 1200px */
+  @media screen and (max-width: 1020px) {
+    aside {
+        flex: 1;
+        padding-left: 110px;
+        padding-right: 110px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+    } 
 
-/* 
+    .services {
+        height: 700px;
+        font-size: smaller;
+    } 
+  } 
+ /* Changes the way .services sections are displayed on devices with width < 900px */
+  @media screen and (max-width: 900px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services {
+        height: 500px;
+        font-size: smaller;
+    } 
 
-re-check all text colors, may not be white but closer to background 
+    aside {
+        width: 100%;
+        padding-left: 110px;
+        padding-right: 110px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    } 
+  }
 
-DOUBLE CHECK THE ORDER CONVENTION FOR ALL SELECTORS (Required)
-Check h tags in html
-Comment each rule
+   /* Changes the way .services sections are displayed on devices with width < 680px */
+    @media screen and (max-width: 680px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services {
+        height: 700px;
+        font-size: smaller;
+    } 
 
- */
+    aside {
+        width: 100%;
+        padding-left: 110px;
+        padding-right: 110px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    } 
+  }
